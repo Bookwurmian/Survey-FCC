@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form FCC</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+  <header>
+    <div id="img-div">
+      <img id="img-header" alt="a pug puppy sits in a grassy field" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bonny_Bonita.JPG/640px-Bonny_Bonita.JPG">
+      <h1 id="title">New Pug Experience Survey</h1>
+    </div>
+  </header>
+  <main>
+
+    <p id="description">Thank you for taking home one of our custom-made, one of a kind rescue pugs. Please fill out this survey about your experiences. Your feedback is critical to improve our pugs in the future.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Your name</label>
+        <input id="name" type="text" placeholder="Your name" required>
+
+        <label for="email" id="email-label">Email </label>
+        <input id="email" type="email" placeholder="Your email address" required>
+
+        <label for="dog-name" id="dog-name-label">Your new dog's name</label>
+        <input id="dog-name" type="text" placeholder="Your new dog's name" required>
+
+      </fieldset>
+      <fieldset>
+        <legend>Pug Satisfaction</legend>
+        <div id="satisfaction">
+          <label for="number" id="number-label">On a scale of 1-10, how satisfied are you with your new pug?</label>
+          <input id="number" type="number" placeholder="1-10" min="1" max="10" required><br>
+          <label for="number" id="number-label-2">On a scale of 1-10, how likely are you to rescue another pug with us?</label>
+          <input id="number-2" type="number" placeholder="1-10" min="1" max="10" required>
+        </div>
+      </fieldset>
+      <fieldset>
+
+        <legend>Space Requirements</legend>
+        <div id="dropdown-box">
+          <div id="attach">
+            <p>How attached is your new pug?</p>
+            <select name="pug-following" id="dropdown-2">
+              <option value="Independent" selected>Independent</option>
+              <option value="lap-dog">A bit of a lap dog</option>
+              <option value="velcro-pug">A velcro pug</option>
+              <option value="need-backpack">I carry him/her in a backpack</option>
+            </select>
+          </div>
+          <div id="sleep">
+            <p>Where does your new pug sleep?</p>
+            <select name="pug-sleep" id="dropdown">
+              <option value="dog-bed" selected>In a dog bed</option>
+              <option value="floor">On the floor, next to my bed</option>
+              <option value="foot-bed">At the foot of my bed</option>
+              <option value="covers">Under the covers with me</option>
+              <option value="breathe">So close I breathe dog breath at night</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Drawbacks</legend>
+        <p>Which of the following indignities have you suffered from your new pug?</p>
+        <input type="checkbox" name="suffer" id="sneezing" value="sneezing">
+        <label for="sneezing">Sneezing in your face </label>
+        <input type="checkbox" name="suffer" id="belching" value="belching">
+        <label for="belching">Loud belching </label>
+        <input type="checkbox" name="suffer" id="cheese" value="cheese">
+        <label for="cheese">Cheese stolen</label>
+
+        <input type="checkbox" name="suffer" id="fur" value="fur">
+        <label for="fur">Fur and drool on your work clothes </label>
+      </fieldset>
+      <fieldset>
+        <legend class="#">Improvements</legend>
+        <p>How could we improve new pug models?</p>
+        <input type="radio" name="improve" id="leak" value="leak">
+        <label for="leak">Less facial leaking</label>
+
+        <input type="radio" name="improve" id="texture" value="texture">
+        <label for="texture">Improved upholstery texture</label>
+        <input type="radio" name="improve" id="food" value="food">
+        <label for="food">More efficient energy use</label>
+        <input type="radio" name="improve" id="nothing" value="nothing">
+        <label for="nothing">I wouldn't change a thing </label>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Info</legend>
+        <p> Please tell us any additional thoughts on pug improvement </p>
+        <textarea placeholder="Please let us know your ideas!"></textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit your survey</button>
+    </form>
+  </main>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
